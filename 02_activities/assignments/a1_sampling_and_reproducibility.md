@@ -10,10 +10,30 @@ Modify the number of repetitions in the simulation to 100 (from the original 100
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
+# Author: Beiwen Wu
 
 ```
-Please write your explanation here...
+# There were two stages at which sampling is occurring in the model. 
+
+## Infect a random subset of people
+infected_indices = np.random.choice(ppl.index, size=int(len(ppl) * ATTACK_RATE), replace=False): Function used: np.random.choice(..., replace=False)
+Sampling frame: all 1000 people in the community
+Sample Size: 10% of the sampling frame (100 individuals)
+Distribution: Random sampling without replacement. Randomly select a number of people without replacement to be as infected with covid-19 based on a predefined attack rate of 10%. 
+This reflects the idea from the blog post that 10% of people are infected.
+
+## Primary contact tracing: randomly decide which infected people get traced
+  ppl.loc[ppl['infected'], 'traced'] = np.random.rand(sum(ppl['infected'])) < TRACE_SUCCESS
+Function used: np.random.rand()
+Sampling frame: Only infected individuals in the community  (100 individuals)
+Sample size: 20% of the sampling frame (20 individuals)
+This reflects the idea from the blog post that an infection has only a 20% chance of being traced to a source event.
+
+# Does this code appear to reproduce the graphs from the original blog post? 
+Not necessarility. Each time I run the Python script file`whitby_covid_tracing.py`, a new graph was generated. Some graphs were close to the original blog post, but often they were different.  
+
+# Modify the number of repetitions in the simulation to 100 (from the original 1000). Run the script multiple times and observe the outputted graphs. Comment on the reproducibility of the results. 
+After I set the random seed to 123 prior to simulation using np.random.seed(123), the results were reproducible. 
 
 ```
 
