@@ -35,44 +35,67 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 12. Limitations, known biases, etc
 13. Link to documentation and any additional sources used
 
-
 # Your Changes
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of the survey is to understand the factors that contribute to the recent high turnover rates across the company, particularly among entry- and lower-level positions. The results of the suvry will help develop strategies to improve employee satisfaction and eventually increase employee retention. 
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target population: Current and recently departed employees (within the past 6 months) in entry- and lower-level positions at the company.
+Sampling Frame: A list of all current and former employees (within the past 6 months) in entry- and lower-level positions at the company.
+Sampling Units: Individual employees.
+Sampling Strategy: Stratified random sampling. I will get a list of all current and former employees (within the past 6 months) in entry- and lower-level positions at the company from the HR department. I will stratify it by employment status (current or former) and I will randomly select 
+a group of people from each stratum to complete the survey. 
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. How long have you been employed here?
+2. What were your main motivations for choosing to work at this company in your role initially?
+3. What were the main reasons for leaving (or considering leaving) your position/company?
+4. What do you most like and dislike about your position/company?
+5. On a scale from 1 (Very Dissatisfied) to 10 (Very Satisfied), how would you rate your overall job satisfaction?.
+6. How did your professional development and career growth been supported? 
+7. How did you feel about the communications within the commpany?
+8. How did you comment your work-life balance while working here?
+9. What did you wish to change in the position/company?
+10. Any additional comments or feedbacks you want to add?
 ```
 
 ## Part B - Survey Evaluation:
 
 Identify and describe survey features:
 
-```
-write your answer here
-```
+1. Sample type: the survey had a complex design, with stratification and multiple stages of selection, and unequal probabilities of selection of respondents.
+2. Sample size: 16,149 
+3. Target population: all persons 15 years of age and older in Canada, excluding:
+                Residents of the Yukon, Northwest Territories, and Nunavut;
+                Full-time residents of institutions.
+4. Sampling frame: The survey frame was created using two different components:
+            Lists of telephone numbers in use (both landline and cellular) available to Statistics Canada from  various sources (Telephone companies, Census of population, etc.);
+            The Address Register (AR): List of all dwellings within the ten provinces.
+5. Survey mode(s) : telephone and internet modes
+6. Timeline: September to December 2018
+7. Response rate: 41.9%
+8. Weights: there were several weight adjustments performed that depended on the province, volunteer status, stratum, age and sex of the respondent
+9. Data processing: Data processing steps were standarized, including consistency edits, family edits and imputation. For edits and imputation, the same methodology was applied as previously used for GVP 2013. At every stage of processing, verification and dissemination, considerable effort was made to produce data that are as precise as possible in their level of detail, and to ensure that the published estimates are of good quality in keeping with Statistics Canada standards. 
+10. Cleaning, imputation, etc: donor imputation was used to fill in missing data for some item and partial non-response. Imputation was carried out in nine steps. The first step consisted of imputing personal income and family income. The next three steps involved imputing the formal volunteering variables in the analytical master file. Steps five and six were imputing the informal volunteering variables in the analytical master file. Finally, the last three steps involved imputing variables in the donation file and the solicitation methods (FG1A_030 to FG1A_140 and FG1A_170) in the analytical master file.
+11. Sources of error: Although sampling error is unavoidable, the standard error from the sample data and confidence intervals for estimates were calculated as a measure of sampling variability.  
+12. Limitations, known biases, etc: 
+    Recall bias: People may have difficulty recalling past behaviors, leading to over- or under- reporting.
+    Non-response bias: Less than 50% of people responded, so there may be fundamental differences between respondents and non-respondents. 
+    Mode effects: Two different interviewing methods were implemented, this may lead to difference in responses
+13. Link to documentation and any additional sources used
+https://abacus.library.ubc.ca/file.xhtml?persistentId=hdl:11272.1/AB2/GBFDYG/FF7L7T&version=1.0
+https://www150.statcan.gc.ca/n1/pub/75-006-x/2021001/article/00002-eng.htm?utm_source=chatgpt.com
+
 
 ## Rubric
 
